@@ -1,0 +1,262 @@
+@import '../../styles/variables.scss';
+
+.signUp {
+  padding-top: 80px;
+  height: 100vh;
+
+  .header {
+    align-items: flex-end;
+
+    .step {
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      right: 0;
+      opacity: .54;
+      font-size: .75rem;
+    }
+
+    .back {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      opacity: .54;
+    }
+
+    .title {
+      font-weight: 600;
+      text-align: center;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+
+    .icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      opacity: .54;;
+    }
+  }
+
+  .stepOne,
+  .stepTwo,
+  .stepThree,
+  .stepFour,
+  .stepFive,
+  .registered {
+    padding: 1.5rem 1rem;
+  }
+
+  .stepTwo,
+  .stepFour {
+    h1 {
+      margin: 1.5rem 0;
+    }
+
+    .inputGroup {
+      .userInput {
+        text-align: center;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .stepThree {
+    h1 {
+      margin-top: 1.5rem;
+    }
+
+    .description {
+      color: $blue;
+      font-weight: 600;
+      margin: .5rem 0;
+    }
+
+    .userInput {
+      color: rgba($black, .54);
+    }
+
+    .genderContainer {
+      background-color: $lightGray;
+      border-radius: 16px;
+      margin: .5rem 0;
+    }
+
+    .gender {
+      background-color: $lightGray;
+      outline: none;
+      border: 0;
+      border-radius: 16px;
+      width: 40vw;
+      height: 30vw;
+      margin: .5rem;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 4.5vw;
+      font-weight: 600;
+
+      &.active {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+
+  .stepFive {
+    .signIn {
+      display: flex;
+      justify-content: space-between;
+
+      .google,
+      .facebook {
+        width: 40vw;
+        // height: 48px;
+        border-radius: 4px;
+        margin: .5rem;
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+      }
+
+      .text {
+        color: $white;
+        font-weight: 600;
+      }
+    }
+
+    .google {
+      background-color: $google;
+    }
+
+    .facebook {
+      background-color: $facebook;
+    }
+
+    .inputGroup {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .description {
+      color: $blue;
+      font-weight: 600;
+      margin: 2.5rem 0 .5rem;
+    }
+  }
+
+  .inputGroup {
+    display: block;
+    text-align: center;
+
+    h2 {
+      margin: .5rem;
+    }
+
+    .userLabel {
+      display: inline-block;
+      margin: .5rem;
+      color: $blue;
+      font-weight: 600;
+    }
+
+    .userInput {
+      height: 48px;
+      line-height: 48px;
+      border-radius: 100px;
+      border: 1px solid rgba($gray, .5);
+      outline: none;
+      font-size: 1.25rem;
+      padding: 0 1rem;
+      background-color: $lightGray;
+      margin: .5rem;
+    }
+  }
+
+  .submitContainer {
+
+    .submit {
+      font-weight: 600;
+      font-size: 16px;
+      height: 48px;
+      line-height: 48px;
+      width: 200px;
+      border: 0;
+      background-color: $blue;
+      border-radius: 100px;
+      color: $white;
+      outline: none;
+      margin-top: 1rem;
+      // position: absolute;
+      // bottom: 3rem;
+      // left: 0;
+      // right: 0;
+      // margin: 0 auto;
+
+      // &.focus {
+      //   position: initial;
+      //   margin-top: 1rem;
+      // }
+
+      &.disabled {
+        opacity: .54;
+        pointer-events: none;
+      }
+
+      &.enabled {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+  }
+
+  .registered {
+    .user {
+      width: 20vw;
+      height: 20vw;
+      line-height: 20vw;
+      border-radius: 100%;
+      background-color: $yellow;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 1rem auto;
+    }
+
+    .description {
+      margin: .5rem 0;
+    }
+
+    h2 {
+      width: 65%;
+    }
+
+    h1 {
+      margin-top: 2.5rem;
+    }
+
+    .description {
+      color: rgba($black, .54);
+
+      &.profile {
+        font-weight: 600;
+      }
+    }
+
+    .submit {
+      margin-bottom: 1rem;
+    }
+
+    .prize {
+      border: 0;
+      margin: 0 0 1.5rem;
+
+      .prizeValue {
+        padding: 1rem 0;
+      }
+    }
+  }
+}

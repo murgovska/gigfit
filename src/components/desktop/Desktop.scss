@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.desktop {
+  min-height: 100vh;
+  background-color: $lightGray;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 100% 100%;
+
+  .logo {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    h1 {
+      width: 100%;
+      font-size: 5.5vw;
+      font-weight: bolder;
+      margin: .5rem auto;
+    }
+
+    .description {
+      font-size: 24px;
+      color: rgba($black, .54);
+      margin: .5rem auto;
+    }
+  }
+
+  .qrcode {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+
+    img {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import './styles/variables';
+
+body {
+  &.noScroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.app {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6.75vw;
+    width: 90%;
+    margin: .5rem auto;
+  }
+
+  h2 {
+    font-size: 5.75vw;
+    margin: .5rem auto;
+  }
+
+  .prize {
+    color: $blue;
+    border: 4px solid $yellow;
+    padding: 16px;
+    margin: 2.5rem 0;
+    background-color: $dotsBackground;
+
+    .prizeTitle {
+      font-weight: 600;
+      margin-bottom: .5rem;
+      font-weight: 600;
+    }
+
+    .prizeValue {
+      font-weight: 600;
+      font-size: 7.25vw;
+    }
+  }
+}
+

@@ -1,0 +1,339 @@
+@import '../../styles/variables.scss';
+
+.home {
+  .content {
+    width: 90%;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+
+  .description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5vw;
+    width: 90%;
+    color: rgba($black, .54);
+    margin: .5rem auto;
+  }
+
+  .cta {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $blue;
+    color: $white;
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 4vw;
+    border: 0;
+    width: 50vw;
+    height: 48px;
+    line-height: 48px;
+    margin-top: 3rem;
+    outline: none;
+  }
+
+  .mainContent {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $lightGray;
+
+    .watchVideo {
+      width: 50vw;
+      margin-left: 40vw;
+      margin-bottom: 3.25rem;
+
+      a {
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+
+    .watch {
+      display: inline-block;
+      width: 12.5vw;
+      height: 12.5vw;
+      line-height: 12.5vw;
+      border-radius: 50%;
+      background-color: $yellow;
+
+      svg {
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+    }
+
+    .watchText {
+      color: $yellow;
+      font-size: 4.5vw;
+      font-weight: 600;
+      margin-left: .5rem;
+    }
+
+    .content {
+      position: absolute;
+      top: 42.5%;
+
+      .title {
+        margin: .5rem auto;
+      }
+
+      .description {
+        width: 70%;
+      }
+    }
+
+    select {
+      width: 125px;
+      padding: 0 10px;
+      font-size: 16px;
+      line-height: 1;
+      border: 0;
+      border-radius: 5px;
+      height: 34px;
+      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+      -webkit-appearance: none;
+      background-position-x: 100px;
+      margin: .5rem;
+      outline: none;
+    }
+  }
+
+  .SEOContent {
+    text-align: center;
+
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 5.25vw;
+    }
+
+    .icon {
+      background-color: $yellow;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 2.5rem 0 .5rem;
+
+      img {
+        padding: 1rem 1.125rem;
+      }
+    }
+  }
+
+  .section {
+    border-bottom: 1px solid $lightGray;
+    padding: 3.125rem 0;
+  }
+
+  .partTwo,
+  .partFour {
+    height: 100vh;
+    position: relative;
+    background-color: $lightGray;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .content {
+      position: absolute;
+      top: 42.5%;
+
+      h1 {
+        font-size: 6.75vw;
+      }
+    }
+  }
+
+  .partTwo {
+    .content {
+      .description {
+        color: $blue;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      .prize {
+        font-size: 8.5vw;
+        font-weight: 600;
+        color: $blue;
+        line-height: 120%;
+      }
+
+      .tip {
+        color: rgba($black, .54);
+        font-size: 3.5vw;
+        margin-top: -24px;
+      }
+    }
+  }
+
+  .partThree {
+    img {
+      width: 200px;
+      margin-top: 2rem;
+    }
+  }
+
+  .partFour {
+    background-position: right;
+  }
+
+  .partFive {
+    .faqs {
+      margin-top: 3rem;
+
+      .faq {
+        padding: 1rem 0;
+        font-size: 4.5vw;
+        text-align: left;
+
+
+        .question {
+          padding: 1rem 0;
+          font-weight: 600;
+          opacity: .54;
+
+          &.active {
+            opacity: 1;
+          }
+
+          img {
+            position: absolute;
+            right: 1.5rem;
+            width: 20px;
+          }
+        }
+
+        .answer {
+          opacity: .54;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($blue, .12);
+        }
+      }
+    }
+  }
+
+  .partSix {
+    background-color: $lightGray;
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .tile {
+        width: 40vw;
+        height: 40vw;
+        display: inline-block;
+        border-radius: 8px;
+        margin: .5rem;
+
+        &.gig {
+          position: relative;
+          background-color: $yellow;
+
+          .text {
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+            font-size: 5.75vw;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .section {
+      padding-bottom: 0;
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        display: inline-block;
+        width: 40vw;
+        margin: 0 .5rem;
+        padding: 1rem 0;
+        font-size: .75rem;
+        border-bottom: 1px solid rgba($blue, .12);
+        opacity: .54;
+
+        a {
+          text-decoration: none;
+          color: rgba($black, .54);
+        }
+      }
+    }
+
+    .bottom {
+      background-color: $lightGray;
+      margin: 0 -5%;
+      padding: 5% 2.5%;
+
+      .section1 {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 0 .5rem;
+
+        .socialMediaIcons {
+          opacity: .54;
+
+          img {
+            margin: 0 .5rem;
+          }
+        }
+      }
+    }
+
+    .section2 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+
+      a,
+      .item {
+        color: rgba($black, .54);
+        font-size: 4.25vw;
+        font-weight: 600;
+        width: 41vw;
+        margin: .5rem;
+        text-align: left;
+        border-bottom: 1px solid rgba($blue, .12);
+        text-decoration: none;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .section3 {
+      img {
+        margin: .5rem 1rem;
+      }
+    }
+
+    .copyrights {
+      color: rgba($black, .54);
+      font-size: .75rem;
+      margin: 2rem 0;
+    }
+  }
+
+  @media (orientation: landscape) {
+    .mainContent,
+    .partTwo,
+    .partFour {
+      height: 200vh;
+    }
+  }
+}

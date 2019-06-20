@@ -1,0 +1,17 @@
+@import './mixins';
+
+// GIG COLOURS
+$blue: #0437FF;
+$yellow: #FFD100;
+$white: #FFFFFF;
+$black: #000000;
+$gray: #F7F9FF;
+$lightGray: #F4F7FF;
+
+$headlineFont: "Source Sans Pro", sans-serif;
+$dotsBackground:#F4F7FF;
+$google: #DC422A;
+$facebook: #3B5998;
+
+// @include font-face($headlineFont, '../assets/fonts/SourceSansPro-Bold', 400, normal, ttf);
+// @include font-face($headlineFontBold, './fonts/geogrotesque-bold-regular', 700, normal, woff2 woff otf ttf svg);

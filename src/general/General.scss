@@ -1,0 +1,31 @@
+
+@import '../styles/variables.scss';
+
+.general {
+  height: calc(100vh - 80px);
+  padding-top: 80px;
+  background-color: $lightGray;
+
+  h2 {
+    margin-top: 25%!important;
+  }
+
+  .description,
+  .gig {
+    color: rgba($black, .54);
+    margin: 1rem auto;
+    font-size: 1rem;
+  }
+
+  .description {
+    width: 75%;
+  }
+
+  .gig {
+    position: absolute;
+    text-align: left;
+    width: 35%;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}

@@ -1,0 +1,88 @@
+
+@import '../../styles/variables.scss';
+
+.menu {
+  display: inline-block;
+
+  .icon {
+    opacity: .54;
+  }
+}
+
+.menuItems {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 10;
+  display: flex;
+
+  &.open {
+    height: calc(100vh - 80px);
+  }
+
+  > div {
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-top: 5rem;
+
+
+    a {
+      text-decoration: none;
+    }
+
+    .item {
+      text-align: left;
+      display: inline-block;
+      color: rgba($black, .54);
+      font-size: 5.75vw;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      margin: 1rem 0;
+      cursor: pointer;
+      display: block;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .socialMediaIcons {
+    opacity: .54;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+
+    img {
+      margin: 0 1.25rem;
+    }
+  }
+
+  @media (orientation: landscape) {
+    &.open {
+      top: 60px;
+      height: calc(100vh - 60px);
+
+      > div {
+        margin-top: 2rem;
+
+        .item {
+          font-size: 1rem;
+        }
+      }
+
+      .socialMediaIcons {
+        position: initial;
+        margin-top: 3.5rem;
+      }
+    }
+  }
+}
