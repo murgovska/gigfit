@@ -2,7 +2,7 @@
   "name": "gighack",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://murgovska.github.io/gig-fit/",
+  "homepage": "https://murgovska.github.io/gigfit/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
