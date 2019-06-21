@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "26afe854af186a2c46b1",
+    "revision": "4e19bd87774d927553e4",
     "url": "/gigfit/static/css/main.2ff2956a.chunk.css"
   },
   {
-    "revision": "26afe854af186a2c46b1",
-    "url": "/gigfit/static/js/main.3784a4f5.chunk.js"
+    "revision": "4e19bd87774d927553e4",
+    "url": "/gigfit/static/js/main.4f1a6d08.chunk.js"
   },
   {
     "revision": "9929e0e4cbd9d0f01109",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/gigfit/static/media/Thumbnail5.5800d5ee.png"
   },
   {
-    "revision": "5899402b21e2c245accfcb4f9c7ab482",
+    "revision": "c576fd5e2e77f770c50299656ae18c1f",
     "url": "/gigfit/index.html"
   }
 ];
