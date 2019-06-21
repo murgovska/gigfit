@@ -244,9 +244,9 @@ class SignUp extends Component {
             <img src={require('../../assets/images/icons/Back.svg')} />
           </span> }
         </div>
-        { step === 3 && <StepOne {...props1} /> }
+        { step === 1 && <StepOne {...props1} /> }
         { step === 2 && <StepTwo {...props2} /> }
-        { step === 1 && <StepThree {...props3} /> }
+        { step === 3 && <StepThree {...props3} /> }
         { step === 4 && <StepFour {...props4} /> }
         { step === 5 && <StepFive {...props5} /> }
         { step === 6 && <Registered {...this.state.user} /> }
