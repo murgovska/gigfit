@@ -62,13 +62,13 @@ class StepThree extends Component {
           <h1>Your gender</h1>
           <p className='description'>What is your sex?</p>
           {/* <div className='genderContainer'> */}
-            <button className={`gender ${gender === 'male' ? 'active' : ''}`} id='male' onClick={this.selectGender}>
-              <FontAwesomeIcon icon={faMars} size='2x' color={`${gender === 'male' ? 'white' : 'black'}`} />
-              <span className='genderText'>I'm a man</span>
+            <button className={`gender ${gender === 'male' ? 'active' : ''} genderText`} id='male' onClick={this.selectGender}>
+              <FontAwesomeIcon id='male' icon={faMars} size='2x' color={`${gender === 'male' ? 'white' : 'black'}`} />
+              I'm a man
             </button>
-            <button className={`gender ${gender === 'female' ? 'active' : ''}`} id='female' onClick={this.selectGender}>
-              <FontAwesomeIcon icon={faVenus} size='2x' color={`${gender === 'female' ? 'white' : 'black'}`} />
-              <span className='genderText'>I'm a woman</span>
+            <button className={`gender ${gender === 'female' ? 'active' : ''} genderText`} id='female' onClick={this.selectGender}>
+              <FontAwesomeIcon id='female' icon={faVenus} size='2x' color={`${gender === 'female' ? 'white' : 'black'}`} />
+              I'm a woman
             </button>
           {/* </div> */}
           <div className='inputGroup'>
